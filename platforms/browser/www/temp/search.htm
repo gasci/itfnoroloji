@@ -1,0 +1,255 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="search_dosyalar/filelist.xml">
+<title>&lt;</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>bono</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>bono</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2003-11-21T21:10:00Z</o:Created>
+  <o:LastSaved>2003-11-21T21:11:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>607</o:Words>
+  <o:Characters>3461</o:Characters>
+  <o:Company>un</o:Company>
+  <o:Lines>28</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>4060</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Normal Tablo";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=TR style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p><span style='font-size:10.0pt'>&lt;!-- Begin JavaScript Search Code ----&gt;
+<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>&lt;center&gt;<br>
+&lt;IMG SRC=&quot;http://www.web-search.com/spacer2.gif&quot;
+width=&quot;1&quot; height=&quot;1&quot;&gt;<br>
+&lt;SCRIPT&gt;<br>
+&lt;!-- hide this script from non-JavaScript browsers<br>
+// Distribution Rights Granted to: http://www.web-search.com/<br>
+// All code in this script is Copyright(C) 1996, Justin Boyan<br>
+// For documentation and more info, see: http://www.cs.cmu.edu/~jab/snark/<br>
+// This is SNARK Version 1.0, 18 May 1996 <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>var MAX_ENGINES = 75;<br>
+var SNARK_STRING = &quot;hunting+the+snark&quot;;<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>function MakeArray(n) {<br>
+for (var i = 1; i &lt;= n; i++) {<br>
+this[i] = 0;<br>
+}<br>
+this.maxlen = n;<br>
+this.len = 0;<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>return this;<br>
+}<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>var engs = new MakeArray(MAX_ENGINES);<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>function find_substring(needle, haystack) {<br>
+var i, needlen = needle.length, haylen = haystack.length;<br>
+for (i=0; i&lt;=haylen-needlen; i++) {<br>
+if (needle == haystack.substring(i,i+needlen))<br>
+return i;<br>
+}<br>
+return false;<br>
+}<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>function Engine(name, opts, home, search) {<br>
+var snark = find_substring(SNARK_STRING, search);<br>
+this.name = name;<br>
+this.opts = opts;<br>
+this.home = home;<br>
+this.pre_snark = search.substring(0,snark);<br>
+this.post_snark= search.substring(snark+SNARK_STRING.length, search.length);<br>
+}<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>function Add(name, opts, home, search) {<br>
+engs.len++;<br>
+if (engs.len &lt;= engs.maxlen) {<br>
+engs[engs.len] = new Engine(name, opts, home, search)<br>
+}<br>
+else {<br>
+alert(&quot;Better increase MAX_ENGINES: &quot; + engs.len + &quot;&gt;&quot; +
+engs.maxlen)<br>
+}<br>
+}<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>// ADD YOUR OWN SEARCH ENGINES BELOW. (See
+http://www.cs.cmu.edu/~jab/snark/ )<br>
+<br>
+Add(&quot;Web-Search.Com&quot;, &quot;SELECTED&quot;,<br>
+&quot;http://www.web-search.com&quot;,<br>
+&quot;http://www.web-search.com/cgi-bin/person2.cgi?comp1col3col5=any&amp;col1col3col5=hunting+the+snark&amp;link1=2&amp;wrapoff1=%3CBR%3E&amp;wrapoff3=%3Cp%3E&amp;snap=ul&amp;sort=col4rev&quot;);
+<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>Add(&quot;Google&quot;, &quot;&quot;,<br>
+&quot;http://www.yahoo.com&quot;,<br>
+&quot;http://ink.yahoo.com/bin/query?p=hunting+the+snark&quot;); <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>Add(&quot;NorthernLight&quot;, &quot;&quot;,<br>
+&quot;http://www.northernlight.com&quot;,<br>
+&quot;http://www.northernlight.com/nlquery.fcg?cb=0&amp;qr=hunting+the+snark&quot;);
+<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>Add(&quot;Amazon&quot;, &quot;&quot;,<br>
+&quot;http://www.web-search.com/Open/amazon.html&quot;,<br>
+&quot;http://www.web-search.com/OpenPro/anaconda.cgi?mode=books&amp;search=hunting+the+snark&quot;);
+<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>Add(&quot;AllTheWeb&quot;, &quot;&quot;,<br>
+&quot;http://www.alltheweb.com&quot;,<br>
+&quot;http://www.alltheweb.com/search?cat=web&amp;lang=any&amp;query=hunting+the+snark&quot;);
+<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>Add(&quot;About.Com&quot;, &quot;&quot;,<br>
+&quot;http://www.about.com/&quot;,<br>
+&quot;http://searchpartners.about.com/texis/metaresults?site=websrch&amp;terms=hunting+the+snark&quot;
+); <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>Add(&quot;Lycos&quot;, &quot;&quot;,<br>
+&quot;http://www.lycos.com/&quot;,<br>
+&quot;http://search.lycos.com/main/default.asp?lpv=1&amp;loc=searchhp&amp;query=hunting+the+snark&quot;
+); <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>Add(&quot;GoTo&quot;, &quot;&quot;,<br>
+&quot;http://www.goto.com/&quot;,<br>
+&quot;http://www.goto.com/d/search/?type=home&amp;tm=1&amp;Keywords=hunting+the+snark&quot;
+); <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>Add(&quot;Altavista&quot;, &quot;&quot;,<br>
+&quot;http://www.altavista.com/&quot;,<br>
+&quot;http://www.altavista.com/sites/search/web?q=hunting+the+snark&quot; ); <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>Add(&quot;Yahoo&quot;, &quot;&quot;,<br>
+&quot;http://www.yahoo.com&quot;,<br>
+&quot;http://search.yahoo.com/search?o=1&amp;p=hunting+the+snark&amp;d=y&amp;za=default&amp;h=s&amp;g=0&amp;n=10&quot;);
+<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>// ADD YOUR OWN SEARCH ENGINES ABOVE. (See
+http://www.cs.cmu.edu/~jab/snark/ )<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>function HandleForm(form) {<br>
+form.submit(); // This fixes a mysterious Netscape bug. Without this line,<br>
+// you can't use &lt;enter&gt; to start the search the first time.<br>
+var i, oldq=form.query.value, newq=&quot;&quot;;<br>
+for (i=0; i&lt;oldq.length; i++) { // compress [ ]+ into \+<br>
+var thischar = oldq.charAt(i);<br>
+if (thischar != ' ')<br>
+newq += thischar;<br>
+else if (lastchar != ' ')<br>
+newq += '+';<br>
+lastchar = thischar;<br>
+}<br>
+var eng = engs[1+form.service.selectedIndex];<br>
+location.href = newq ? eng.pre_snark + newq + eng.post_snark : eng.home;<br>
+}<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>function DisplayForm() {<br>
+document.writeln('&lt;CENTER&gt;&lt;FORM OnSubmit=&quot;HandleForm(this);
+return false&quot;&gt;');<br>
+document.writeln('&lt;SELECT name=&quot;service&quot;&gt;');<br>
+for (i=1; i &lt;= engs.len; i++) {<br>
+document.writeln(&quot;&lt;OPTION &quot; + engs[i].opts + &quot;&gt; &quot; +
+engs[i].name);<br>
+}<br>
+document.writeln('&lt;/SELECT&gt; &lt;INPUT size=20
+name=&quot;query&quot;&gt;');<br>
+document.writeln('&lt;input type=submit value=&quot; Submit&quot;&gt;');<br>
+document.writeln('&lt;input type=reset value=&quot; Reset&quot;&gt;');<br>
+document.writeln('&lt;/FORM&gt; &lt;/CENTER&gt;');<br>
+}<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>DisplayForm();<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>// done hiding from old browsers --&gt;<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>&lt;/SCRIPT&gt;<br>
+&lt;A HREF=&quot;http://www.web-search.com/meta1.html&quot;&gt;&lt;font
+size=2&gt;&lt;B&gt;FREE Java Script Search
+Engine&lt;/B&gt;&lt;/font&gt;&lt;/A&gt;<br>
+&lt;/center&gt;<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>&lt;!-- END JavaScript Search Code ----&gt;</span><o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
