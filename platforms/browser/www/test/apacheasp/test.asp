@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-<head>
+<head>   <meta charset="utf-8" />
 <title></title>
 <meta http-equiv="Content-Type" content="text/html">
 <link rel="stylesheet" type="text/css" href="../../css/style.css">
