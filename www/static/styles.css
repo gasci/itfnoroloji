@@ -12,7 +12,26 @@ body {
     margin-bottom: -50px;
 }
 
+.width100 {
+    width: 100% !important;
+}
+
 .footer,
 .push {
     height: 50px;
 }
+
+#intro-panel, .card-panel {
+    box-shadow: none !important;
+    border: 1px solid #e0e0e0;
+}
+
+iframe {
+    border:none;
+    height:calc(100vh - 100px);
+    width: 100%;
+    margin-top:10px;
+
+}
+
+
