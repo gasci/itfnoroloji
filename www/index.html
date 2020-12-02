@@ -19,12 +19,31 @@
     enable_page_level_ads: true
   });
 </script>
+<style>
+  .is-bordered-4{
+    border-radius: 4px;
+  }
+
+  .navbar-color {
+    background: rgb(2,0,36);
+    background: linear-gradient(185deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 48%, rgba(63,81,181,1) 100%, rgba(0,212,255,1) 100%);
+  }
+
+  .shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  }
+
+  .footer-color {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 55%, rgba(0,0,0,1) 100%, rgba(63,81,181,1) 100%);
+  }
+</style>
 </head>
 
 <body class="grey lighten-4">
 
-  <nav class="nav-extended indigo ">
-    <div class="nav-wrapper indigo container">
+  <nav class="nav-extended navbar-color ">
+    <div class="nav-wrapper container">
       <a href="#" class="brand-logo">ITF Nöroloji</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -36,7 +55,7 @@
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
-    <li class=""><a style="font-size:25px" class="btn white-text indigo">ITF Nöroloji</a></li>
+    <li class=""><a style="font-size:25px" class="btn white-text navbar-color">ITF Nöroloji</a></li>
     <li><a href="ekitap.htm">E-kitap</a></li>
     <li><a href="klinik/itf2.htm">Hakkımızda</a></li>
     <li><a href="http://www.itfnoroloji.org/arama.htm">Arama</a></li>
@@ -61,11 +80,11 @@
       </div>
     </div>
 
-    <div id="intro-panel" class="card-panel">
+    <div class="card-panel is-bordered-4 shadow">
       İstanbul Tıp Fakültesi Nöroloji Anabilim Dalı websitesine hoş geldiniz.
     </div>
 
-    <div class="row card-panel valign-wrapper">
+    <div class="row card-panel valign-wrapper is-bordered-4 shadow">
       <div class="col offset-m3 m6 s12"><a href="ekitap.htm">
           <img src="marti2.jpg" alt="marti" class="width100"></a>
       </div>
@@ -73,7 +92,7 @@
 
     
 
-    <ul class="collection indigo">
+    <ul class="collection navbar-color is-bordered-4 shadow">
       <li class="collection-item avatar valign-wrapper">
         <i class="material-icons circle indigo white-text">import_contacts</i>
         <p class="indigo-text">
@@ -84,34 +103,34 @@
 
     <!-- <iframe src="demo_iframe.htm" height="200" width="300"></iframe> -->
 
-    <ul class="collection" style="font-family: Arial;">
+    <ul class="collection is-bordered-4 shadow" style="font-family: Arial;">
       <li class="collection-item avatar valign-wrapper">
         <i class="material-icons circle teal">local_library</i>
         <p>
-          <a href="http://www.itfnoroloji.org/MSEK/MSEK2017.html">Mezuniyet Sonrası Eğitim Kursu</a></p>
+          <a href="http://www.itfnoroloji.org/MSEK/MSEK2017.html" class="black-text">Mezuniyet Sonrası Eğitim Kursu</a></p>
       </li>
       <li class="collection-item avatar valign-wrapper">
         <i class="material-icons circle teal">history</i>
         <p>
-          <a href="Tarihce/tarihce.htm">T&uuml;rkiye'de
+          <a href="Tarihce/tarihce.htm" class="black-text">T&uuml;rkiye'de
             N&ouml;rolojinin Geli&#351;imi (Prof.Dr. Kenan T&uuml;kel-1988)</a></p>
       </li>
       <li class="collection-item avatar valign-wrapper">
         <i class="material-icons circle teal">image</i>
         <p>
-          <a href="trase/trase.htm">EMG ve G&ouml;r&uuml;nt&uuml;leme
+          <a href="trase/trase.htm" class="black-text">EMG ve G&ouml;r&uuml;nt&uuml;leme
             &ouml;rnekleri</a></p>
       </li>
       <li class="collection-item avatar valign-wrapper">
         <i class="material-icons circle teal">school</i>
         <p>
-          <a href="asistan/asistan.htm">Asistan ve
+          <a href="asistan/asistan.htm" class="black-text">Asistan ve
             &Ouml;&#287;renciler i&ccedil;in</a></p>
       </li>
       <li class="collection-item avatar valign-wrapper">
         <i class="material-icons circle teal">people</i>
         <p>
-          <a href="http://www.itfnoroloji.org/arama.htm"></a><a href="hastayakini/index.html">Alzheimer
+          <a href="hastayakini/index.html" class="black-text">Alzheimer
             ve
             demansl&#305; hasta
             yak&#305;nlar&#305;na &ouml;neriler&nbsp;</a></p>
@@ -119,7 +138,7 @@
       <li class="collection-item avatar valign-wrapper">
         <i class="material-icons circle teal">folder</i>
         <p>
-          <a href="BEYINSAPI2016.pdf">Prof. Dr. Feza Deymeer'in
+          <a href="BEYINSAPI2016.pdf" class="black-text">Prof. Dr. Feza Deymeer'in
             "Beyin
             Sap&#305;" dersi</a></p>
       </li>
@@ -130,7 +149,7 @@
   </div>
 
 
-  <footer class="page-footer grey darken-3">
+  <footer class="page-footer footer-color">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -142,14 +161,14 @@
         </div>
         <div class="col l4 offset-l2 s12">
           <ul>
-            <li><a class="white-text" href="#!">Tasarım: Göktuğ Aşcı</a></li>
+            <li>Tasarım: Dr. Göktuğ Aşcı, <a class="white-text" style="text-decoration:underline" href="https://www.linkedin.com/in/gokasci/" target="_blank">Linkedin</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container center">
-        <a class="white-text" href="#!">© 2019 ITF, Nöroloji Anabilim Dalı</a>
+        <a class="white-text" href="#!">© 2020 İstanbul Tıp Fakültesi, Nöroloji Anabilim Dalı</a>
       </div>
     </div>
   </footer>
